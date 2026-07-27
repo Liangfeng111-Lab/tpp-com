@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Submit a deal to tpp.com! Share great bargains you've found with our community of savvy shoppers.">
+  <title>Submit a Deal — tpp.com</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏷️</text></svg>">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-top">
+      <div class="logo"><a href="index.html"><span class="logo-icon">t</span><div><div>tpp.com</div><div class="logo-tagline">Deals · Coupons · Savings</div></div></a></div>
+      <div class="header-search"><input type="text" placeholder="Search deals, stores, coupons..."><button aria-label="Search">🔍</button></div>
+      <div class="header-actions"><button class="btn-icon">♡ HipList</button><a href="submit.html" class="btn-icon btn-submit">+ Submit Deal</a></div>
+      <button class="mobile-menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="main-nav">
+      <div class="container">
+        <a href="index.html" class="nav-link">🏷️ Deals</a><a href="stores.html" class="nav-link">🏪 Stores</a><a href="coupons.html" class="nav-link">🎫 Coupons</a><a href="recipes.html" class="nav-link">🍽️ Recipes</a><a href="diy.html" class="nav-link">🔨 DIY</a><a href="tips.html" class="nav-link">💡 Tips</a><a href="about.html" class="nav-link">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="index.html" class="nav-link">🏷️ Deals</a><a href="stores.html" class="nav-link">🏪 Stores</a><a href="coupons.html" class="nav-link">🎫 Coupons</a><a href="recipes.html" class="nav-link">🍽️ Recipes</a><a href="diy.html" class="nav-link">🔨 DIY</a><a href="tips.html" class="nav-link">💡 Tips</a><a href="about.html" class="nav-link">About</a><a href="submit.html" class="nav-link btn-submit" style="text-align:center;margin-top:12px;border-radius:8px;">+ Submit Deal</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="container"><h1>📤 Submit a Deal</h1><p>Found an amazing bargain? Share it with the tpp.com community! Our editors review every submission.</p></div>
+  </section>
+
+  <main>
+    <div class="submit-section">
+      <h2>Deal Details</h2>
+      <p class="submit-intro">Fill out the form below with as much detail as possible. Deals with 40+ positive reviews and 4+ star ratings have the best chance of being featured.</p>
+
+      <form class="submit-form">
+        <div class="form-group">
+          <label for="dealUrl">Deal URL <span class="required">*</span></label>
+          <input type="url" id="dealUrl" placeholder="https://www.amazon.com/..." required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="store">Store <span class="required">*</span></label>
+            <select id="store" required>
+              <option value="">Select a store...</option>
+              <option>Amazon</option><option>Walmart</option><option>Target</option><option>Best Buy</option><option>Costco</option><option>Kohl's</option><option>Walgreens</option><option>CVS</option><option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="category">Category <span class="required">*</span></label>
+            <select id="category" required>
+              <option value="">Select a category...</option>
+              <option>Electronics</option><option>Kitchen & Dining</option><option>Home & Garden</option><option>Fashion</option><option>Beauty</option><option>Toys & Games</option><option>Baby & Kids</option><option>Pets</option><option>Food & Grocery</option><option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="title">Product Name <span class="required">*</span></label>
+          <input type="text" id="title" placeholder="e.g., Instant Pot Duo 7-in-1 Electric Pressure Cooker, 6 Quart" required>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" placeholder="Why is this a great deal? Include key features, what makes it special, and any personal experience..."></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="originalPrice">Original Price ($)</label>
+            <input type="number" id="originalPrice" placeholder="99.99" step="0.01" min="0">
+          </div>
+          <div class="form-group">
+            <label for="dealPrice">Deal Price ($) <span class="required">*</span></label>
+            <input type="number" id="dealPrice" placeholder="49.99" step="0.01" min="0" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="promoCode">Promo Code (if applicable)</label>
+          <input type="text" id="promoCode" placeholder="e.g., SAVE20">
+          <p class="form-note">Include any coupon codes needed to get this price</p>
+        </div>
+
+        <div class="form-group">
+          <label for="expirationDate">Expiration Date (if known)</label>
+          <input type="date" id="expirationDate">
+        </div>
+
+        <div class="form-group" style="margin-top:28px;">
+          <button type="submit" class="btn-submit-deal">Submit Deal for Review →</button>
+        </div>
+      </form>
+
+      <div class="form-success">
+        <div class="icon">✅</div>
+        <h3>Deal Submitted Successfully!</h3>
+        <p>Thank you for sharing! Our editorial team will review your submission within 24-48 hours. If approved, your deal will appear on tpp.com with credit to you.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><div class="logo"><a href="index.html"><span class="logo-icon">t</span><span>tpp.com</span></a></div><p>Your daily destination for the best deals, coupons, and savings tips. Since 2024.</p><div class="social-icons"><a href="#" aria-label="Facebook">📘</a><a href="#" aria-label="Twitter">🐦</a><a href="#" aria-label="Instagram">📷</a><a href="#" aria-label="Pinterest">📌</a><a href="#" aria-label="TikTok">🎵</a></div></div>
+        <div class="footer-links"><h4>Deals</h4><ul><li><a href="index.html">Today's Deals</a></li><li><a href="stores.html">Store Deals</a></li><li><a href="coupons.html">Coupons</a></li></ul></div>
+        <div class="footer-links"><h4>Content</h4><ul><li><a href="recipes.html">Recipes</a></li><li><a href="diy.html">DIY Projects</a></li><li><a href="tips.html">Money Tips</a></li></ul></div>
+        <div class="footer-links"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="submit.html">Submit a Deal</a></li><li><a href="#">Contact</a></li></ul></div>
+        <div class="footer-newsletter"><h4>📬 Don't Miss Out</h4><p>Join 2M+ subscribers!</p><form class="footer-newsletter-form"><input type="email" placeholder="Your email" required><button type="submit">Subscribe</button></form></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 tpp.com — All rights reserved.</span><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Affiliate Disclosure</a></div></div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
